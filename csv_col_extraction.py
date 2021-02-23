@@ -18,7 +18,7 @@ cols = input('Indexes of the columns to keep, between 0 and {}, separed by space
 colsToKeep = []
 for col in cols.split(' '):
     col_val = int(col)
-    if col_val >= 0 and col_val < len(cols):
+    if col_val >= 0 and col_val < len(header):
         colsToKeep.append(col_val)
 
 for line in lines_r:
